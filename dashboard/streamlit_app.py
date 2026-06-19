@@ -1,4 +1,4 @@
-"""Streamlit dashboard for AI Metro Digital Twin research outputs."""
+"""Streamlit dashboard for Metro Digital Twin research outputs."""
 
 from pathlib import Path
 
@@ -16,7 +16,7 @@ MITIGATION_FILE = RESULTS_DIR / "mitigation_results.csv"
 
 
 st.set_page_config(
-    page_title="AI Metro Digital Twin",
+    page_title="Metro Digital Twin",
     page_icon="Metro",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -424,7 +424,7 @@ def plot_mitigation_before_after(before_value, after_value):
     bars = ax.bar(labels, values, color=colors, width=0.5)
     ax.set_ylim(0, max(values) * 1.28)
     ax.set_ylabel("Average congestion (%)")
-    ax.set_title("Congestion Reduction After AI Mitigation")
+    ax.set_title("Congestion Reduction After Mitigation")
     ax.grid(axis="y", alpha=0.2)
     ax.spines[["top", "right"]].set_visible(False)
 
@@ -459,7 +459,7 @@ performance_df = load_csv(PERFORMANCE_FILE)
 mitigation_df = load_csv(MITIGATION_FILE)
 
 with st.sidebar:
-    st.markdown("### AI Metro Digital Twin")
+    st.markdown("### Metro Digital Twin")
     st.caption("Research dashboard")
     st.divider()
     st.markdown("**Data status**")
@@ -471,12 +471,12 @@ with st.sidebar:
     st.write("SUMO digital twin")
     st.write("OpenStreetMap network")
     st.write("XGBoost, Random Forest, LSTM, GRU")
-    st.write("AI mitigation engine")
+    st.write("Mitigation engine")
 
 st.markdown(
     """
     <div class="hero">
-        <div class="hero-title">AI Metro Digital Twin Dashboard</div>
+        <div class="hero-title">Metro Digital Twin Dashboard</div>
         <div class="hero-copy">
             Advanced scenario monitoring, congestion prediction, and mitigation evidence for metro construction traffic impact research.
         </div>
@@ -695,4 +695,5 @@ with data_tab:
             hide_index=True
         )
 
-st.caption("AI Metro Digital Twin | SUMO simulation, machine learning prediction, and mitigation analytics")
+st.caption("Metro Digital Twin | SUMO simulation, machine learning prediction, and mitigation analytics")
+
