@@ -8,13 +8,11 @@
 
 AI Metro Digital Twin is a research-focused urban mobility platform that combines SUMO traffic simulation, OpenStreetMap road networks, machine learning prediction models, and an interactive dashboard to analyze metro construction impacts and recommend traffic mitigation strategies.
 
-## Repository Description
+## Description
 
-**One sentence:** A SUMO and AI-powered digital twin for simulating metro construction traffic disruption, predicting congestion, and evaluating mitigation strategies.
+A SUMO and AI-powered digital twin for simulating metro construction traffic disruption, predicting congestion, and evaluating mitigation strategies.
 
-**One paragraph:** This project builds a digital twin of an urban traffic corridor using OpenStreetMap data and SUMO simulation outputs, then transforms scenario-level mobility data into machine learning datasets for congestion prediction. It compares XGBoost, Random Forest, LSTM, and GRU models, generates performance reports, and supports decision-making through an AI mitigation engine and Streamlit dashboard.
-
-**Keywords:** digital twin, SUMO, traffic simulation, smart city, metro construction, congestion prediction, machine learning, deep learning, XGBoost, Random Forest, LSTM, GRU, Streamlit, IEEE research.
+This project builds a digital twin of an urban traffic corridor using OpenStreetMap data and SUMO simulation outputs, then transforms scenario-level mobility data into machine learning datasets for congestion prediction. It compares XGBoost, Random Forest, LSTM, and GRU models, generates performance reports, and supports decision-making through an AI mitigation engine and Streamlit dashboard.
 
 ## Project Overview
 
@@ -27,12 +25,6 @@ The repository is organized for reproducible research, GitHub presentation, and 
 Metro construction can disrupt existing traffic networks through lane closures, rerouting pressure, increased waiting time, lower average speed, and higher travel-time uncertainty. Traditional traffic analysis often studies these impacts after deployment or with limited static assumptions.
 
 This project addresses the need for a digital twin that can simulate construction scenarios, generate measurable mobility indicators, predict congestion, and support proactive mitigation planning.
-
-## Research Motivation
-
-Smart cities need data-driven tools that connect microscopic traffic simulation with AI-based forecasting. A digital twin provides a controlled environment where normal, construction, and peak-hour scenarios can be compared before real-world interventions are finalized.
-
-The motivation is to support safer, faster, and more explainable urban transport planning during metro infrastructure development.
 
 ## Project Objectives
 
@@ -149,7 +141,6 @@ AI_Metro_Digital_Twin/
 - Model comparison reports and plots.
 - AI mitigation engine for congestion reduction recommendations.
 - Streamlit dashboard for scenario comparison.
-- IEEE research paper workspace.
 
 ## Project Statistics
 
@@ -161,7 +152,6 @@ AI_Metro_Digital_Twin/
 | Digital twin scenarios | Normal, Metro Construction, Peak Hour |
 | Dashboard | Streamlit |
 | Mitigation engine | Implemented |
-| Research output | IEEE paper draft workspace |
 
 ## Results
 
@@ -281,10 +271,6 @@ python src/evaluation/perfomance_report.py
 streamlit run dashboard/streamlit_app.py
 ```
 
-## Research Contribution
-
-This project contributes a reproducible AI-assisted digital twin pipeline for studying metro construction traffic impacts. It links microscopic SUMO simulation outputs with machine learning and deep learning models, compares predictive performance across model families, and demonstrates a mitigation engine for congestion-aware strategy selection.
-
 ## Future Scope
 
 - Add real-time traffic feeds for live digital twin synchronization.
@@ -308,4 +294,3 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 - Eclipse SUMO for microscopic traffic simulation.
 - OpenStreetMap contributors for map data.
 - TensorFlow, XGBoost, Scikit-learn, Pandas, NumPy, Matplotlib, and Streamlit communities.
-- IEEE research writing conventions used as the target publication style.
