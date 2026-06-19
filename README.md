@@ -138,6 +138,7 @@ AI_Metro_Digital_Twin/
 
 ---
 
+
 # 🚦 Implemented Features
 
 * Digital Twin creation using SUMO
@@ -155,6 +156,43 @@ AI_Metro_Digital_Twin/
 * Interactive Streamlit dashboard
 
 ---
+📍 Case Study
+
+The proposed framework was evaluated using a real-world case study of Vijay Nagar Square, Indore, Madhya Pradesh, India, one of the city's busiest traffic intersections and a major commercial corridor.
+
+The road network was extracted from OpenStreetMap (OSM) and converted into a SUMO-compatible network to create a Digital Twin of the study area. Multiple traffic scenarios were simulated, including:
+
+- Normal Traffic Scenario
+- Metro Construction Scenario (lane closure to emulate construction activity)
+- Peak Hour Traffic Scenario
+
+Simulation outputs such as vehicle travel time, waiting time, average speed, route length, and congestion metrics were collected and processed into a structured dataset for Machine Learning and Deep Learning model training.
+
+This real-world case study demonstrates the applicability of the proposed framework for evaluating the impact of metro construction on urban traffic and supporting data-driven traffic management decisions.
+
+## 🗺️ Study Area
+
+**Location:** Vijay Nagar Square, Indore, Madhya Pradesh, India
+
+**Road Network Source:** OpenStreetMap (OSM)
+
+**Simulation Platform:** SUMO (Simulation of Urban MObility)
+
+**Study Objective:** Analyze the impact of metro construction on traffic flow and evaluate congestion prediction and mitigation strategies.
+
+# 📷 Project Screenshots
+
+### Study Area (Vijay Nagar Square)
+
+![Study Area](docs/images/vijay_nagar_network.png)
+
+### SUMO Digital Twin
+
+![SUMO](docs/images/sumo_simulation.png)
+
+### Dashboard
+
+![Dashboard](docs/images/dashboard.png)
 
 # 📊 Model Performance
 
