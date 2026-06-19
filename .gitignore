@@ -1,0 +1,25 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and IDEs
+.vscode/
+.idea/
+
+# Virtual environments
+.venv/
+env/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+
+# Large generated SUMO emission outputs
+data/simulation_output/*emission.xml

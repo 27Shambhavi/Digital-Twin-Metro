@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <input>
+
+        <net-file value="../osm/indore_construction.net.xml"/>
+
+        <route-files value="../data/raw/routes.rou.xml"/>
+
+    </input>
+
+    <output>
+
+        <tripinfo-output value="../data/simulation_output/construction_tripinfo.xml"/>
+
+        <summary-output value="../data/simulation_output/construction_summary.xml"/>
+
+        <emission-output value="../data/simulation_output/construction_emission.xml"/>
+
+    </output>
+
+    <time>
+
+        <begin value="0"/>
+
+        <end value="3600"/>
+
+    </time>
+
+</configuration>

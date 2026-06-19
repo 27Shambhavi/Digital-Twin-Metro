@@ -1,0 +1,28 @@
+project:
+  name: Digital Twin - Traffic Simulation
+  version: 1.0
+
+simulation:
+  duration: 3600
+  step_length: 1.0
+  gui_enabled: false
+
+data:
+  raw_path: data/raw/
+  processed_path: data/processed/
+  output_path: data/simulation_output/
+
+osm:
+  map_file: osm/indore.net.xml
+  route_file: osm/routes.rou.xml
+
+models:
+  xgboost_path: trained_models/xgboost_model.pkl
+  lstm_path: trained_models/lstm_model.h5
+  gru_path: trained_models/gru_model.h5
+
+scenarios:
+  - normal
+  - construction
+  - rain
+  - peak_hour
