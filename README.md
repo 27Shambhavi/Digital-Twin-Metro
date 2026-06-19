@@ -1,4 +1,4 @@
-﻿# 🚦 ML-Driven Digital Twin for Traffic Prediction and Mitigation in Metro Construction Zones
+<img width="885" height="827" alt="Screenshot 2026-06-19 143704" src="https://github.com/user-attachments/assets/2af76ee1-9c6d-451b-976e-745747aa5b4f" />﻿# 🚦 ML-Driven Digital Twin for Traffic Prediction and Mitigation in Metro Construction Zones
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
@@ -182,25 +182,38 @@ This real-world case study demonstrates the applicability of the proposed framew
 
 # 📷 Project Screenshots
 
-### Study Area (Vijay Nagar Square)
+## 📍 Study Area (Vijay Nagar Square)
 
-![Study Area]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 114326.png")
+![Study Area](<img width="1917" height="870" alt="Screenshot 2026-06-17 201258" src="https://github.com/user-attachments/assets/c42e83bd-cda9-41dd-813a-205fef3da4ac" />
+)
 
+---
 
-### SUMO Digital Twin
+## 🚦 SUMO Digital Twin
 
-![Sumo]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-17 222412.png")
+![SUMO](<img width="1327" height="888" alt="Screenshot 2026-06-19 114326" src="https://github.com/user-attachments/assets/95c5e0be-cf41-4dd8-9be9-b8956e1a384c" />
+)
 
+---
 
-### Dashboard
+## 📊 Dashboard Overview
 
-![Dashboard]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 143704.png")
+![Dashboard](<img width="885" height="827" alt="Screenshot 2026-06-19 143704" src="https://github.com/user-attachments/assets/5ebd95cf-5cf4-4522-8be4-5b0dfbb81ba4" />
+)
 
+---
 
-![Dashboard]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 143728.png")
+## 📈 Model Performance
 
+![Dashboard](<img width="1913" height="818" alt="Screenshot 2026-06-19 143728" src="https://github.com/user-attachments/assets/3ec0c959-d11b-4314-9558-a21d25a4a52f" />
+)
 
-![Dashboard]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 143758.png")
+---
+
+## 🚧 Mitigation Dashboard
+
+![Dashboard](<img width="1917" height="851" alt="Screenshot 2026-06-19 143758" src="https://github.com/user-attachments/assets/f1c2f9c0-c6df-4dc8-af3f-808535380a8c" />
+)
 
 
 
