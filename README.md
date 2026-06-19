@@ -1,4 +1,4 @@
-﻿# AI Metro Digital Twin
+﻿# 🚦 ML-Driven Digital Twin for Traffic Prediction and Mitigation in Metro Construction Zones
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
@@ -6,291 +6,276 @@
 [![SUMO](https://img.shields.io/badge/SUMO-Traffic%20Simulation-2E7D32)](https://www.eclipse.org/sumo/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-AI Metro Digital Twin is a research-focused urban mobility platform that combines SUMO traffic simulation, OpenStreetMap road networks, machine learning prediction models, and an interactive dashboard to analyze metro construction impacts and recommend traffic mitigation strategies.
 
-## Description
+A Digital Twin framework that combines **SUMO traffic simulation**, **Machine Learning**, and **Deep Learning** to analyze, predict, and mitigate traffic congestion caused by metro construction activities.
 
-A SUMO and AI-powered digital twin for simulating metro construction traffic disruption, predicting congestion, and evaluating mitigation strategies.
+The project creates a virtual representation of an urban road network, simulates multiple traffic scenarios, generates research datasets, trains predictive models, and recommends mitigation strategies through an interactive dashboard.
 
-This project builds a digital twin of an urban traffic corridor using OpenStreetMap data and SUMO simulation outputs, then transforms scenario-level mobility data into machine learning datasets for congestion prediction. It compares XGBoost, Random Forest, LSTM, and GRU models, generates performance reports, and supports decision-making through an AI mitigation engine and Streamlit dashboard.
+---
 
-## Project Overview
+# 📌 Problem Statement
 
-AI Metro Digital Twin models normal, metro construction, and peak-hour traffic conditions to quantify how infrastructure work affects urban mobility. The system generates traffic simulation outputs, engineers research-ready features, trains prediction models, compares performance, and recommends congestion mitigation strategies.
+Metro rail construction frequently causes lane closures, reduced road capacity, traffic congestion, longer travel times, increased fuel consumption, and higher emissions.
 
-The repository is organized for reproducible research, GitHub presentation, and future extension into a larger smart-city decision support system.
+Conventional traffic management is mostly reactive, where mitigation measures are applied only after congestion has already occurred.
 
-## Problem Statement
+This project proposes a **Digital Twin-based Decision Support Framework** capable of simulating construction scenarios, predicting congestion using Machine Learning models, and recommending traffic mitigation strategies before severe congestion develops.
 
-Metro construction can disrupt existing traffic networks through lane closures, rerouting pressure, increased waiting time, lower average speed, and higher travel-time uncertainty. Traditional traffic analysis often studies these impacts after deployment or with limited static assumptions.
+---
 
-This project addresses the need for a digital twin that can simulate construction scenarios, generate measurable mobility indicators, predict congestion, and support proactive mitigation planning.
+# 🎯 Objectives
 
-## Project Objectives
+* Develop a Digital Twin of an urban road network using SUMO.
+* Simulate multiple traffic scenarios including normal, construction, and peak-hour traffic.
+* Generate a structured traffic dataset from simulation outputs.
+* Engineer relevant traffic features for congestion prediction.
+* Compare Machine Learning and Deep Learning models for traffic prediction.
+* Recommend mitigation strategies based on predicted congestion.
+* Provide an interactive dashboard for traffic analysis and decision support.
 
-- Build a SUMO-based traffic digital twin from OpenStreetMap data.
-- Simulate normal, metro construction, and peak-hour mobility scenarios.
-- Generate structured datasets from simulation output XML files.
-- Engineer congestion-related features such as travel time, waiting time, route length, and average speed.
-- Train and compare XGBoost, Random Forest, LSTM, and GRU models.
-- Generate evaluation reports and model comparison visualizations.
-- Recommend mitigation strategies using predicted congestion levels.
-- Provide a Streamlit dashboard for scenario comparison.
+---
 
-## Complete System Architecture
+# 🏗️ System Workflow
 
 ```text
-OpenStreetMap Road Network
-        |
-        v
-SUMO Network and Route Generation
-        |
-        v
-Traffic Simulation Scenarios
-Normal | Metro Construction | Peak Hour
-        |
-        v
-Simulation Output XML
-tripinfo | summary | emission
-        |
-        v
-Dataset Generation and Feature Engineering
-        |
-        v
-Prediction Models
-XGBoost | Random Forest | LSTM | GRU
-        |
-        v
-Evaluation and Comparison
-MAE | RMSE | R2 | Scenario Metrics
-        |
-        v
-AI Mitigation Engine and Dashboard
+OpenStreetMap
+        │
+        ▼
+SUMO Digital Twin
+        │
+        ▼
+Traffic Scenario Simulation
+        │
+        ▼
+Traffic Dataset Generation
+        │
+        ▼
+Feature Engineering
+        │
+        ▼
+Machine Learning & Deep Learning
+(XGBoost • Random Forest • LSTM • GRU)
+        │
+        ▼
+Congestion Prediction
+        │
+        ▼
+Mitigation Recommendation
+        │
+        ▼
+Interactive Dashboard
 ```
 
-## Technology Stack
+---
 
-- **Language:** Python
-- **Simulation:** Eclipse SUMO
-- **Map Data:** OpenStreetMap
-- **Data Processing:** NumPy, Pandas
-- **Machine Learning:** Scikit-learn, XGBoost
-- **Deep Learning:** TensorFlow/Keras
-- **Visualization:** Matplotlib, Streamlit
-- **Model Persistence:** Joblib
-- **Research Output:** IEEE-style paper draft folder
+# ⚙️ Technology Stack
 
-## Project Workflow
+## Simulation
 
-1. Generate or import SUMO-compatible network data from OpenStreetMap.
-2. Generate routes for normal and peak-hour traffic.
-3. Run SUMO scenarios for normal, construction, and peak-hour conditions.
-4. Parse SUMO XML outputs into structured CSV datasets.
-5. Engineer model-ready features and sequence data.
-6. Train XGBoost, Random Forest, LSTM, and GRU models.
-7. Compare models using MAE, RMSE, and R2 score.
-8. Run the mitigation engine to estimate improved congestion.
-9. Launch the dashboard to inspect scenario-level results.
+* SUMO
+* OpenStreetMap
+* NetEdit
 
-## Folder Structure
+## Programming
+
+* Python 3.10+
+
+## Machine Learning
+
+* XGBoost
+* Random Forest
+
+## Deep Learning
+
+* TensorFlow
+* Keras
+* LSTM
+* GRU
+
+## Data Processing
+
+* NumPy
+* Pandas
+* Scikit-learn
+
+## Visualization
+
+* Matplotlib
+* Streamlit
+
+---
+
+# 📂 Project Structure
 
 ```text
 AI_Metro_Digital_Twin/
-|-- config/
-|-- dashboard/
-|-- data/
-|   |-- raw/
-|   |-- processed/
-|   `-- simulation_output/
-|-- docs/
-|   `-- images/
-|-- models/
-|-- notebooks/
-|-- osm/
-|-- paper/
-|-- results/
-|-- src/
-|   |-- preprocessing/
-|   |-- feature_engineering/
-|   |-- prediction/
-|   |-- optimization/
-|   |-- evaluation/
-|   `-- utils/
-|-- sumo/
-|-- trained_models/
-|-- README.md
-|-- requirements.txt
-|-- LICENSE
-|-- CONTRIBUTING.md
-`-- CHANGELOG.md
+
+├── config/
+├── dashboard/
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── simulation_output/
+├── docs/
+├── models/
+├── notebooks/
+├── osm/
+├── paper/
+├── results/
+├── src/
+│   ├── preprocessing/
+│   ├── feature_engineering/
+│   ├── prediction/
+│   ├── optimization/
+│   ├── evaluation/
+│   └── utils/
+├── sumo/
+├── trained_models/
+├── README.md
+├── requirements.txt
+└── LICENSE
 ```
 
-## Implemented Features
+---
 
-- SUMO digital twin for traffic simulation.
-- OpenStreetMap-based road network integration.
-- Metro construction scenario modeling.
-- Peak-hour traffic scenario modeling.
-- Simulation output collection for trip, summary, and emission data.
-- Dataset generation from SUMO XML output.
-- Feature engineering for congestion prediction.
-- XGBoost regression model.
-- Random Forest regression model.
-- LSTM sequence model.
-- GRU sequence model.
-- Model comparison reports and plots.
-- AI mitigation engine for congestion reduction recommendations.
-- Streamlit dashboard for scenario comparison.
+# 🚦 Implemented Features
 
-## Project Statistics
+* Digital Twin creation using SUMO
+* OpenStreetMap road network integration
+* Metro construction traffic simulation
+* Peak-hour traffic simulation
+* Dataset generation from simulation outputs
+* Feature engineering pipeline
+* XGBoost implementation
+* Random Forest implementation
+* LSTM implementation
+* GRU implementation
+* Model comparison
+* Traffic mitigation engine
+* Interactive Streamlit dashboard
 
-| Category | Count / Status |
-| --- | --- |
-| ML models implemented | 4 |
-| Prediction models | XGBoost, Random Forest, LSTM, GRU |
-| Simulation engine | Eclipse SUMO |
-| Digital twin scenarios | Normal, Metro Construction, Peak Hour |
-| Dashboard | Streamlit |
-| Mitigation engine | Implemented |
+---
 
-## Results
+# 📊 Model Performance
 
-### Model Performance
+| Model         |    MAE |   RMSE |     R² |
+| ------------- | -----: | -----: | -----: |
+| XGBoost       | 0.0095 | 0.0163 | 0.9981 |
+| Random Forest | 0.0099 | 0.0172 | 0.9979 |
+| LSTM          | 0.2186 | 0.2746 | 0.4671 |
+| GRU           | 0.2151 | 0.2772 | 0.4569 |
 
-| Model | MAE | RMSE | R2 |
-| --- | ---: | ---: | ---: |
-| Random Forest | 0.0191 | 0.0299 | 0.9939 |
-| XGBoost | 0.0197 | 0.0303 | 0.9937 |
-| LSTM | 0.2186 | 0.2746 | 0.4671 |
-| GRU | 0.2151 | 0.2772 | 0.4569 |
+**Observation**
 
-### Scenario Impact
+Tree-based ensemble models (XGBoost and Random Forest) achieved the highest predictive performance on the generated simulation dataset, while recurrent neural networks (LSTM and GRU) showed comparatively lower performance due to the limited temporal dependency in the current dataset.
 
-| Metric | Observed Construction Impact |
-| --- | ---: |
-| Vehicle count | +0.33% |
-| Average duration | +1.56% |
-| Average waiting time | +2.59% |
-| Average time loss | +2.94% |
-| Average speed | -2.50% |
+---
 
-### Mitigation Summary
+# 📈 Dashboard
 
-The mitigation engine estimates an average predicted congestion of `0.5113`, average expected congestion of `0.2613`, and an estimated improvement of approximately `48.90%` after applying strategy recommendations.
+The dashboard provides:
 
-## Screenshots
+* Scenario comparison
+* Traffic impact analysis
+* Model performance comparison
+* Mitigation recommendations
+* Dataset exploration
+* Prediction analytics
 
-Screenshots and visual documentation should be stored in `docs/images/`.
+---
 
-| Asset | Location |
-| --- | --- |
-| Dashboard screenshot placeholder | `docs/images/dashboard-placeholder.md` |
-| Results visualization placeholder | `docs/images/results-placeholder.md` |
-| Generated plots | `results/` |
+# 🚀 Installation
 
-## Installation Guide
-
-### 1. Clone the repository
+Clone the repository
 
 ```bash
-git clone https://github.com/27Shambhavi/AI-Metro-Digital-Twin.git
-cd AI-Metro-Digital-Twin
+git clone https://github.com/<your-username>/AI-Metro-Digital-Twin.git
 ```
 
-### 2. Create a virtual environment
-
-```bash
-python -m venv .venv
-```
-
-### 3. Activate the virtual environment
-
-Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-Linux/macOS:
-
-```bash
-source .venv/bin/activate
-```
-
-### 4. Install dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Install SUMO
+---
 
-Install Eclipse SUMO from the official website and update SUMO paths in the scripts if your installation path differs from the default Windows path used in this project.
+# ▶️ Running the Project
 
-## How to Run
+Generate traffic routes
 
-### Run SUMO simulation
+```bash
+python sumo/generate_routes.py
+```
+
+Run traffic simulation
 
 ```bash
 python sumo/run_simulation.py
 ```
 
-### Generate datasets
+Generate dataset
 
 ```bash
-python src/preprocessing/dataset_generator.py
-python src/feature_engineering/feature_extractor.py
-python src/preprocessing/sequence_generator.py
+python src/preprocessing/feature_extractor.py
 ```
 
-### Train prediction models
+Train models
 
 ```bash
 python models/xgboost_model.py
+
 python models/random_forest_model.py
+
 python models/lstm_model.py
+
 python models/gru_model.py
 ```
 
-### Compare models
-
-```bash
-python models/compare_all_models
-```
-
-### Run mitigation engine
-
-```bash
-python src/optimization/diversion_strategy.py
-python src/evaluation/perfomance_report.py
-```
-
-### Launch dashboard
+Launch dashboard
 
 ```bash
 streamlit run dashboard/streamlit_app.py
 ```
 
-## Future Scope
+---
 
-- Add real-time traffic feeds for live digital twin synchronization.
-- Extend the scenario engine with weather, incidents, public events, and adaptive signal timing.
-- Add explainability reports for model decisions.
-- Integrate geospatial dashboard layers.
-- Improve route choice modeling and dynamic traffic assignment.
-- Package model training as configurable experiments.
-- Add automated tests and continuous integration.
+# 📖 Research Contribution
 
-## GitHub Topics
+This work integrates:
 
-`digital-twin` `sumo` `traffic-simulation` `machine-learning` `deep-learning` `smart-city` `urban-mobility` `xgboost` `tensorflow` `streamlit` `python` `ieee`
+* Digital Twin technology
+* Traffic simulation
+* Machine Learning
+* Deep Learning
+* Decision Support
 
-## License
+into a unified framework for predicting and mitigating congestion caused by metro construction activities.
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+---
 
-## Acknowledgements
+# 🔮 Future Work
 
-- Eclipse SUMO for microscopic traffic simulation.
-- OpenStreetMap contributors for map data.
-- TensorFlow, XGBoost, Scikit-learn, Pandas, NumPy, Matplotlib, and Streamlit communities.
+* Real-time traffic sensor integration
+* Weather-aware traffic prediction
+* Automatic scenario generation
+* Reinforcement Learning for adaptive signal control
+* Explainable Machine Learning (SHAP)
+* Cloud deployment
+* IoT integration
+* Closed-loop Digital Twin optimization
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👩‍💻 Author
+
+**Shambhavi Jha**
+
+Machine Learning | Data Science | Intelligent Transportation Systems | Digital Twins
+
