@@ -184,15 +184,18 @@ This real-world case study demonstrates the applicability of the proposed framew
 
 ### Study Area (Vijay Nagar Square)
 
-![Study Area](docs/images/vijay_nagar_network.png)
+![Study Area]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 114326.png")
+
 
 ### SUMO Digital Twin
 
-![SUMO](docs/images/sumo_simulation.png)
+![Sumo]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-17 222412.png")
 
 ### Dashboard
 
-![Dashboard](docs/images/dashboard.png)
+![Dashboard]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 143704.png")
+![Dashboard]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 143728.png")
+![Dashboard]("C:\Users\Lenovo\OneDrive\Pictures\Screenshots\Screenshot 2026-06-19 143758.png")
 
 # 📊 Model Performance
 
