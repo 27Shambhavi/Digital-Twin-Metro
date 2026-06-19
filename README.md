@@ -1,4 +1,4 @@
-<img width="885" height="827" alt="Screenshot 2026-06-19 143704" src="https://github.com/user-attachments/assets/2af76ee1-9c6d-451b-976e-745747aa5b4f" />﻿# 🚦 ML-Driven Digital Twin for Traffic Prediction and Mitigation in Metro Construction Zones
+﻿# 🚦 ML-Driven Digital Twin for Traffic Prediction and Mitigation in Metro Construction Zones
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-Deep%20Learning-FF6F00?logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
@@ -156,7 +156,7 @@ AI_Metro_Digital_Twin/
 * Interactive Streamlit dashboard
 
 ---
-📍 Case Study
+#📍**Case Study**
 
 The proposed framework was evaluated using a real-world case study of Vijay Nagar Square, Indore, Madhya Pradesh, India, one of the city's busiest traffic intersections and a major commercial corridor.
 
@@ -179,41 +179,6 @@ This real-world case study demonstrates the applicability of the proposed framew
 **Simulation Platform:** SUMO (Simulation of Urban MObility)
 
 **Study Objective:** Analyze the impact of metro construction on traffic flow and evaluate congestion prediction and mitigation strategies.
-
-# 📷 Project Screenshots
-
-## 📍 Study Area (Vijay Nagar Square)
-
-![Study Area](<img width="1917" height="870" alt="Screenshot 2026-06-17 201258" src="https://github.com/user-attachments/assets/c42e83bd-cda9-41dd-813a-205fef3da4ac" />
-)
-
----
-
-## 🚦 SUMO Digital Twin
-
-![SUMO](<img width="1327" height="888" alt="Screenshot 2026-06-19 114326" src="https://github.com/user-attachments/assets/95c5e0be-cf41-4dd8-9be9-b8956e1a384c" />
-)
-
----
-
-## 📊 Dashboard Overview
-
-![Dashboard](<img width="885" height="827" alt="Screenshot 2026-06-19 143704" src="https://github.com/user-attachments/assets/5ebd95cf-5cf4-4522-8be4-5b0dfbb81ba4" />
-)
-
----
-
-## 📈 Model Performance
-
-![Dashboard](<img width="1913" height="818" alt="Screenshot 2026-06-19 143728" src="https://github.com/user-attachments/assets/3ec0c959-d11b-4314-9558-a21d25a4a52f" />
-)
-
----
-
-## 🚧 Mitigation Dashboard
-
-![Dashboard](<img width="1917" height="851" alt="Screenshot 2026-06-19 143758" src="https://github.com/user-attachments/assets/f1c2f9c0-c6df-4dc8-af3f-808535380a8c" />
-)
 
 
 
